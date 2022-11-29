@@ -1,7 +1,7 @@
 emitters:
   # "@azure-tools/cadl-autorest": true
   # Uncomment this line and add "@azure-tools/cadl-python" to your package.json to generate Python code
-  "@azure-tools/cadl-python": true
+  #"@azure-tools/cadl-python": true
     # "basic-setup-py": true
     # "package-version": "1.0.0"
     # "package-name": "azure-batch"
@@ -11,4 +11,11 @@ emitters:
   # Uncomment this line and add "@azure-tools/cadl-csharp" to your package.json to generate C# code
   # "@azure-tools/cadl-csharp": true
   # Uncomment this line and add "@azure-tools/cadl-typescript" to your package.json to generate Typescript code
-  # "@azure-tools/cadl-typescript": true
+  "@azure-tools/cadl-typescript":
+    title: Batch Service
+    generateMetadata: true
+    generateTest: true
+    packageDetails:
+      name: "@azure-rest/batch"
+      description: "Batch Service"
+      version: "1.0.0-beta.1"
